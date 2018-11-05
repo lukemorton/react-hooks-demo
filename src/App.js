@@ -8,5 +8,5 @@ const routes = {
 }
 
 export default function App () {
-  return <Router routes={routes} />
+  return <Router routes={routes} window={window} />
 }

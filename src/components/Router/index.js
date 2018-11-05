@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 
-export default function Router ({ routes }) {
+export default function Router ({ routes, window }) {
   const [route, changeRoute] = useState(window.location.pathname)
 
-  useEffect(() => {
+  function changeRouteTitleAndHistory (route) {
     document.title = route
     window.history.pushState({}, route, route)
-  })
+    changeRoute(route)
+  }
 
   const Page = routes[route] || routes['/']
 
-  return <Page changeRoute={changeRoute} />
+  return <Page changeRoute={changeRouteTitleAndHistory} />
 }
