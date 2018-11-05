@@ -13,7 +13,7 @@ export default function About ({ changeRoute }) {
         <a href='/about' onClick={handleChangeRoute}>About</a>
       </nav>
 
-      <h1>About</h1>
+      <h1>About us</h1>
     </div>
   )
 }

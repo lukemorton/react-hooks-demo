@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import About from './About'
 
 it('includes the title', () => {
-  expect(mount(<About />)).toIncludeText('About')
+  expect(mount(<About />)).toIncludeText('About us')
 })
 
 it('changes route when clicking link', () => {

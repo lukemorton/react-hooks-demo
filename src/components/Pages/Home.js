@@ -15,7 +15,7 @@ export default function Home ({ changeRoute }) {
         <a href='/about' onClick={handleChangeRoute}>About</a>
       </nav>
 
-      <h1>Home</h1>
+      <h1>Welcome</h1>
 
       <h2>You clicked {count} times!</h2>
 
