@@ -9,7 +9,7 @@ export default function About ({ changeRoute }) {
   return (
     <div className='page'>
       <nav>
-        <a href='/home' onClick={handleChangeRoute}>Home</a>
+        <a href='/' onClick={handleChangeRoute}>Home</a>
         <a href='/about' onClick={handleChangeRoute}>About</a>
       </nav>
 
